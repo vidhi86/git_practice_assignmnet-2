@@ -1,13 +1,14 @@
-function prime(num){
+function Prime(num){
     let count=0;
     for (i=0 ; i<num ;i++){
-        if (num%2==0){
+        if (num%i==0){
             count++;
         }
     }if(count==2){
-        return false;
+        return true;
     }
-    return true;
+    return false;
 }
 
-console.log(prime(67));
+let ans=Prime(63)
+console.log(ans)
