@@ -5,9 +5,13 @@ function prime(num){
             count++;
         }
     }if(count==2){
-        return false;
+        return true;
     }
-    return true;
+    return false;
 }
-
-console.log(prime(67));
+let ans=prime(45);
+if(ans==true){
+    console.log("Prime");
+}else{
+    console.log("Not prime");
+}
